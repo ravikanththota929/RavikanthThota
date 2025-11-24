@@ -1,34 +1,49 @@
 {
-    "name": "astro-netlify-platform-starter",
-    "type": "module",
-    "version": "0.1.0",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro build",
-        "preview": "astro preview",
-        "astro": "astro"
-    },
-    "dependencies": {
-        "@astrojs/netlify": "^6.6.0",
-        "@astrojs/react": "^4.4.0",
-        "@fontsource-variable/inter": "^5.2.5",
-        "@netlify/blobs": "^10.4.1",
-        "@netlify/functions": "^5.1.0",
-        "@tailwindcss/vite": "^4.1.16",
-        "astro": "^5.15.0",
-        "blobshape": "^1.0.0",
-        "marked": "^16.4.1",
-        "marked-shiki": "^1.2.1",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0",
-        "tailwindcss": "^4.1.16",
-        "unique-names-generator": "^4.7.1"
-    },
-    "devDependencies": {
-        "@types/blobshape": "^1.0.3",
-        "@types/node": "^20.12.7",
-        "@types/react": "^19.2.2",
-        "@types/react-dom": "^19.2.2"
-    }
+  "name": "ravikanththota",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr:ravikanththota": "node dist/ravikanththota/server/server.mjs"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.0",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/platform-server": "^21.0.0",
+    "@angular/router": "^21.0.0",
+    "@angular/ssr": "^21.0.0",
+    "express": "^5.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.0.0",
+    "@angular/cli": "^21.0.0",
+    "@angular/compiler-cli": "^21.0.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^20.17.19",
+    "jsdom": "^27.1.0",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
+  }
 }
